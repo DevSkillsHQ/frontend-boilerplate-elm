@@ -28,3 +28,7 @@ yarn-error.log*
 cypress/plugins
 cypress/support
 cypress/videos
+cypress/screenshots
+
+#ELM
+app-frontend/elm-stuff

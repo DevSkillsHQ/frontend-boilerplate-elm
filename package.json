@@ -1,13 +1,15 @@
 {
-  "name": "frontend-boilerplate-react-nextjs",
+  "name": "frontend-boilerplate-elm",
   "version": "1.0.0",
   "scripts": {
-    "dev": "cd app-frontend && npm run dev",
-    "build": "cd app-frontend && npm install && npm run build",
-    "start": "cd app-frontend && npm run start",
+    "build": "cd app-frontend && elm make src/Main.elm --optimize --output=main.js",
+    "start": "cd app-frontend && elm-live src/Main.elm -- --output=main.js",
     "test": "cypress run"
   },
   "devDependencies": {
-    "cypress": "^9.7.0"
+    "cypress": "^9.7.0",
+    "elm": "^0.19.1-5",
+    "elm-format": "^0.8.7",
+    "elm-live": "^4.0.2"
   }
 }
