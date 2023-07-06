@@ -10,9 +10,9 @@ app-frontend/node_modules
 /coverage
 
 # production
-/build
-/dist
-/dev
+app-frontend/build
+app-frontend/dist
+app-frontend/dev
 
 # misc
 .DS_Store

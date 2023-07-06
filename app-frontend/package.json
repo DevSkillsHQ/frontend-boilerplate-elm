@@ -9,8 +9,7 @@
     "dev": "elm-live src/Main.elm --open --start-page=dev.html --debug --port=4000 -- --output=dev/elm.js",
     "start": "run-p css:watch dev",
     "format": "npx elm-format --yes src",
-    "test:elm": "elm-test-rs",
-    "test": "cypress run"
+    "test:elm": "elm-test-rs"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

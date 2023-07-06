@@ -17,6 +17,6 @@ view =
             ]
         , p [ class "mt-3 text-2xl" ]
             [ text "Get started by editing "
-            , code [ class "p-3 font-mono text-lg bg-gray-100 rounded-md" ] [ text "src/Main.elm" ]
+            , code [ class "p-3 font-mono text-lg bg-gray-100 rounded-md" ] [ text "app-frontend/src/Main.elm" ]
             ]
         ]

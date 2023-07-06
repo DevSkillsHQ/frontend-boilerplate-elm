@@ -4,7 +4,7 @@ A backbone for your coding challenge.
 
 ## Contents
 
-- [Frontend app](src) - an Elm app. Extend with your code.
+- [Frontend app](app-frontend) - an Elm app. Extend with your code.
 - [E2E test suites](cypress/integration) - a frontend Cypress test suite. Extend with your tests.
 - [Pipeline](.github/workflows/tests.yml) - a test Runner that executes the Cypress tests on push to a branch other than `master`/`main`.
 
