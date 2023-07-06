@@ -4,12 +4,15 @@
 /node_modules
 /.pnp
 .pnp.js
+app-frontend/node_modules
 
 # testing
 /coverage
 
 # production
-/build
+app-frontend/build
+app-frontend/dist
+app-frontend/dev
 
 # misc
 .DS_Store
@@ -23,8 +26,14 @@ yarn-debug.log*
 yarn-error.log*
 
 .idea
+.vscode
 
 # Cypress
 cypress/plugins
 cypress/support
 cypress/videos
+cypress/screenshots
+
+#Elm
+elm-stuff
+app-frontend/elm-stuff

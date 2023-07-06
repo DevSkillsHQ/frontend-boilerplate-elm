@@ -1,5 +1,5 @@
 {
-  "name": "frontend-boilerplate-react-nextjs",
+  "name": "frontend-boilerplate-react-elm",
   "version": "1.0.0",
   "scripts": {
     "dev": "cd app-frontend && npm run dev",
