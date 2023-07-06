@@ -1,9 +1,9 @@
 module Main exposing (main)
 
 import Browser
-import Components.Footer as Footer
-import Components.Hero as Hero
-import Components.Tile as Tile
+import Modules.Footer as Footer
+import Modules.Hero as Hero
+import Modules.Tile as Tile
 import Html exposing (Html, div, main_, node, text)
 import Html.Attributes exposing (class, href, rel)
 

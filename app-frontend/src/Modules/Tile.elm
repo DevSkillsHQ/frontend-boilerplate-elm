@@ -1,4 +1,4 @@
-module Components.Tile exposing (view)
+module Modules.Tile exposing (view)
 
 import Html exposing (Html, a, div, h3, p, text)
 import Html.Attributes exposing (class, href, target)

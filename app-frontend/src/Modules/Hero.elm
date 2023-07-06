@@ -1,4 +1,4 @@
-module Components.Hero exposing (view)
+module Modules.Hero exposing (view)
 
 import Html exposing (Html, a, br, code, div, h1, p, text)
 import Html.Attributes exposing (class, href, target)
