@@ -11,6 +11,7 @@ A backbone for your coding challenge.
 ## Tech Stack
 
 - Elm
+- TailwindCSS
 - Cypress
 - GitHub Actions
 
