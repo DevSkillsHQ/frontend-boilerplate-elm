@@ -23,8 +23,16 @@ jobs:
       - name: Extract port from cypress.json
         id: vars
         run: |
-          apiUrl=$(jq -r '.env.apiUrl' ./cypress.json)
+          apiUrl=$(jq -r '.env.apiUrl // .baseUrl // empty' ./cypress.json)
+          if [[ -z "$apiUrl" ]]; then
+            echo "API URL or Base URL not found in cypress.json."
+            exit 1
+          fi
           port=$(echo $apiUrl | grep -o '[0-9]\+')
+          if [[ -z "$port" ]]; then
+            echo "Port not found in URL."
+            exit 1
+          fi
           echo "Extracted port: $port"
           echo "::set-output name=port::$port"
       - name: Run tests
@@ -32,7 +40,7 @@ jobs:
         with:
           build: npm run build
           start: npm run start
-          wait-on: 'npx wait-on --timeout 120000 http-get://127.0.0.1:${{ steps.vars.outputs.port }}/ping'
+          wait-on: 'npx wait-on --timeout 120000 http-get://127.0.0.1:${{ steps.vars.outputs.port }}'
 
   # Verifies the boilerplate can start and run in codespace environment
   test-for-codespaces:
@@ -53,16 +61,25 @@ jobs:
       - name: Extract port from cypress.json
         id: vars
         run: |
-          apiUrl=$(jq -r '.env.apiUrl' ./cypress.json)
+          apiUrl=$(jq -r '.env.apiUrl // .baseUrl // empty' ./cypress.json)
+          if [[ -z "$apiUrl" ]]; then
+            echo "API URL or Base URL not found in cypress.json."
+            exit 1
+          fi
           port=$(echo $apiUrl | grep -o '[0-9]\+')
+          if [[ -z "$port" ]]; then
+            echo "Port not found in URL."
+            exit 1
+          fi
           echo "Extracted port: $port"
           echo "::set-output name=port::$port"
+      
       - name: Run tests
         uses: cypress-io/github-action@v5
         with:
           build: npm run build
           start: npm run start
-          wait-on: 'npx wait-on --timeout 120000 http-get://127.0.0.1:${{ steps.vars.outputs.port }}/ping'
+          wait-on: 'npx wait-on --timeout 120000 http-get://127.0.0.1:${{ steps.vars.outputs.port }}'
 
   check-dependabot:
     needs:
