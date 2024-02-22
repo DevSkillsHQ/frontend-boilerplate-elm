@@ -25,6 +25,6 @@
     "vite-plugin-elm": "^2.9.0"
   },
   "dependencies": {
-    "elm-debug-transformer": "^1.1.2"
+    "elm-debug-transformer": "^1.2.1"
   }
 }
