@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
-    "cypress": "^9.7.0",
+    "cypress": "^13.6.6",
     "elm-format": "^0.8.7",
     "elm-live": "^4.0.2",
     "elm-tooling": "^1.15.0",
