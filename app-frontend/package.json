@@ -9,14 +9,12 @@
     "start": "run-p css:watch dev",
     "css:watch": "npx @tailwindcss/cli -i tailwind.css -o ./dev/tailwind.build.css --watch",
     "dev": "elm-live src/Main.elm --open --start-page=dev.html --debug --port=3000 -- --output=dev/elm.js",
-    "format": "npx elm-format --yes src",
     "test:elm": "elm-test-rs"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.0.17",
     "@tailwindcss/postcss": "^4.0.17",
     "cypress": "^14.2.0",
-    "elm-format": "^0.8.7",
     "elm-live": "^4.0.2",
     "elm-tooling": "^1.15.1",
     "npm-run-all": "^4.1.5",
