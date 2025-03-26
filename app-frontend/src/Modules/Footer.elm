@@ -7,6 +7,6 @@ import Html.Attributes exposing (class, href, rel, target)
 view : Html msg
 view =
     footer [ class "flex items-center justify-center w-full h-24 border-t" ]
-        [ a [ href "https://devskills.co?utm_source=challenge-boilerplate", target "_blank", rel "noopener noreferrer" ]
-            [ text "Built by DevSkills" ]
+        [ a [ href "https://alvalabs.io", target "_blank", rel "noopener noreferrer" ]
+            [ text "Made by Alva Labs" ]
         ]
