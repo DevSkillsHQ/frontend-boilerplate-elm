@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.2.4",
-    "@tailwindcss/postcss": "^4.2.3",
+    "@tailwindcss/postcss": "^4.2.4",
     "cypress": "^15.14.2",
     "elm-live": "^4.0.2",
     "elm-tooling": "^1.17.0",
