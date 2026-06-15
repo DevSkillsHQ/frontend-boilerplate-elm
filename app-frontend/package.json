@@ -12,7 +12,7 @@
     "test:elm": "elm-test-rs"
   },
   "devDependencies": {
-    "@tailwindcss/cli": "^4.3.0",
+    "@tailwindcss/cli": "^4.3.1",
     "@tailwindcss/postcss": "^4.3.0",
     "cypress": "^15.17.0",
     "elm-live": "^4.0.2",
